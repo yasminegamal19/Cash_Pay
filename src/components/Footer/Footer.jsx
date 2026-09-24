@@ -1,6 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Mail, MapPin, Phone } from "lucide-react";
+import cashPayLogo from "../../assets/Cash pay Logo dark.png";
+
 
 import "./Footer.css";
 
@@ -30,10 +32,9 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer__main">
-         
           <div className="footer__brand">
             <Link to="/" className="footer__logo" aria-label="Cash Pay">
-              <img src="/src/assets/Cash pay Log light.jpeg" alt="Cash Pay" />
+              <img src={cashPayLogo} alt="Cash Pay" />
             </Link>
 
             <p>{t("footer.description")}</p>

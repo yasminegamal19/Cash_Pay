@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Download, Globe, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import cashPayLogo from "../../assets/Cash pay Logo dark.png";
 
 import "./Navbar.css";
 
@@ -115,7 +116,7 @@ export default function Navbar() {
             closeMenu();
           }}
         >
-          <img src="/src/assets/Cash pay Logo dark.png" alt="Cash Pay" />
+          <img src={cashPayLogo} alt="Cash Pay" />{" "}
         </Link>
 
         <nav className="navbar__nav">
