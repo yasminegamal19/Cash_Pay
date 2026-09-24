@@ -1,0 +1,427 @@
+.download-app {
+    background: var(--color-surface);
+    overflow: hidden;
+}
+
+.download-app__wrapper {
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 0;
+}
+
+
+.download-app__content {
+    max-width: 600px;
+}
+
+.download-app__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 14px;
+    margin-bottom: 18px;
+    border-radius: 999px;
+    background: rgba(0, 88, 120, 0.08);
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.download-app__title {
+    margin: 0;
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--color-text);
+}
+
+.download-app__title span {
+    color: var(--color-primary);
+}
+
+.download-app__description {
+    max-width: 560px;
+    margin: 22px 0 35px;
+    color: var(--color-text-secondary);
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+.download-app__points {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.download-app__point {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.download-app__point-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(0, 88, 120, 0.08);
+    color: var(--color-primary);
+}
+
+.download-app__point h4 {
+    margin: 0 0 3px;
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.download-app__point p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: 13px;
+}
+
+
+.download-app__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.download-app__store {
+    min-width: 175px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 12px 17px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    background: var(--color-card);
+    transition: var(--transition-normal);
+}
+
+.download-app__store:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+}
+
+.download-app__store-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: var(--color-primary);
+    color: white;
+}
+
+.download-app__store small,
+.download-app__store strong {
+    display: block;
+}
+
+.download-app__store small {
+    color: var(--color-text-muted);
+    font-size: 10px;
+}
+
+.download-app__store strong {
+    margin-top: 2px;
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+
+.download-app__visual {
+    position: relative;
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-app__glow {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    background: rgba(0, 88, 120, 0.1);
+    filter: blur(3px);
+}
+
+.download-app__phone {
+    position: relative;
+    z-index: 2;
+    width: 285px;
+    height: 550px;
+    padding: 10px;
+    border-radius: 40px;
+    background: var(--color-primary-darker);
+    box-shadow: 0 30px 70px rgba(0, 56, 80, 0.25);
+    transform: rotate(3deg);
+}
+
+.download-app__phone-notch {
+    position: absolute;
+    z-index: 4;
+    top: 18px;
+    left: 50%;
+    width: 105px;
+    height: 25px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background: var(--color-primary-darker);
+}
+
+.download-app__phone-screen {
+    height: 100%;
+    padding: 35px 17px 20px;
+    overflow: hidden;
+    border-radius: 32px;
+    background: var(--color-background);
+}
+
+
+.download-app__phone-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.download-app__status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-success);
+}
+
+
+.download-app__balance {
+    padding: 20px;
+    border-radius: 18px;
+    background: var(--color-primary);
+    color: white;
+}
+
+.download-app__balance span {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.download-app__balance strong {
+    font-size: 25px;
+}
+
+.download-app__balance small {
+    font-size: 11px;
+}
+
+
+.download-app__quick-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.download-app__quick-actions>div {
+    padding: 13px 5px;
+    text-align: center;
+    border-radius: 12px;
+    background: var(--color-surface);
+}
+
+.download-app__quick-actions span {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.download-app__quick-actions small {
+    color: var(--color-text-secondary);
+    font-size: 9px;
+}
+
+
+.download-app__mock-transactions {
+    padding-top: 5px;
+}
+
+.download-app__mock-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.download-app__mock-heading strong {
+    font-size: 13px;
+}
+
+.download-app__mock-heading span {
+    color: var(--color-primary);
+    font-size: 9px;
+}
+
+.download-app__mock-transaction {
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.download-app__mock-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: rgba(0, 88, 120, 0.08);
+    color: var(--color-primary);
+    font-size: 13px;
+}
+
+.download-app__mock-transaction strong,
+.download-app__mock-transaction small {
+    display: block;
+}
+
+.download-app__mock-transaction strong {
+    font-size: 10px;
+}
+
+.download-app__mock-transaction small {
+    margin-top: 2px;
+    color: var(--color-success);
+    font-size: 8px;
+}
+
+.download-app__mock-transaction b {
+    font-size: 9px;
+    color: var(--color-text);
+}
+
+
+.download-app__floating-card {
+    position: absolute;
+    z-index: 3;
+    right: 15px;
+    bottom: 70px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--color-card) 95%, transparent);
+    box-shadow: var(--shadow-lg);
+}
+
+.download-app__floating-card>svg {
+    color: var(--color-success);
+}
+
+.download-app__floating-card strong,
+.download-app__floating-card span {
+    display: block;
+}
+
+.download-app__floating-card strong {
+    color: var(--color-text);
+    font-size: 12px;
+}
+
+.download-app__floating-card span {
+    margin-top: 2px;
+    color: var(--color-text-muted);
+    font-size: 9px;
+}
+
+
+@media (max-width: 900px) {
+    .download-app__wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .download-app__content {
+        max-width: 700px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .download-app__description {
+        margin-inline: auto;
+    }
+
+    .download-app__points {
+        max-width: 430px;
+        margin-inline: auto;
+        text-align: start;
+    }
+
+    .download-app__actions {
+        justify-content: center;
+    }
+
+    .download-app__visual {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-app__wrapper {
+        padding: 50px 0;
+    }
+
+    .download-app__title {
+        font-size: 32px;
+    }
+
+    .download-app__description {
+        font-size: 15px;
+    }
+
+    .download-app__actions {
+        flex-direction: column;
+    }
+
+    .download-app__store {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .download-app__visual {
+        min-height: 530px;
+    }
+
+    .download-app__phone {
+        width: 245px;
+        height: 480px;
+    }
+
+    .download-app__floating-card {
+        right: 0;
+        bottom: 45px;
+    }
+}

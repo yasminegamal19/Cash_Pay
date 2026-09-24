@@ -1,0 +1,779 @@
+.ecosystem {
+    position: relative;
+    overflow: hidden;
+    background: #f1f2f3;
+}
+
+.ecosystem__header {
+    max-width: 680px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.ecosystem__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 13px;
+    border: 1px solid rgba(0, 88, 120, 0.12);
+    border-radius: 999px;
+    background: #ffffff;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.ecosystem__title {
+    margin: 20px 0 16px;
+    color: var(--color-text);
+    font-size: 40px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.ecosystem__title span {
+    color: var(--color-primary);
+}
+
+.ecosystem__description {
+    max-width: 590px;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.ecosystem__stage {
+    position: relative;
+    width: min(1050px, 100%);
+    height: 650px;
+    margin: 0 auto;
+}
+
+
+.ecosystem__grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.ecosystem__grid-line {
+    position: absolute;
+    display: block;
+    background: rgba(0, 88, 120, 0.06);
+}
+
+.ecosystem__grid-line--one,
+.ecosystem__grid-line--two {
+    width: 1px;
+    height: 100%;
+    top: 0;
+}
+
+.ecosystem__grid-line--one {
+    left: 25%;
+}
+
+.ecosystem__grid-line--two {
+    left: 75%;
+}
+
+.ecosystem__grid-line--three,
+.ecosystem__grid-line--four {
+    width: 100%;
+    height: 1px;
+    left: 0;
+}
+
+.ecosystem__grid-line--three {
+    top: 25%;
+}
+
+.ecosystem__grid-line--four {
+    top: 75%;
+}
+
+
+.ecosystem__stage::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 570px;
+    height: 570px;
+    border: 1px solid rgba(0, 88, 120, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ecosystem__stage::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    height: 440px;
+    border: 1px dashed rgba(0, 88, 120, 0.07);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ecosystem__connection {
+    position: absolute;
+    z-index: 2;
+    width: 570px;
+    height: 570px;
+    top: 50%;
+    left: 50%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.ecosystem__connection::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    box-shadow:
+        0 0 0 6px rgba(0, 88, 120, 0.08),
+        0 0 18px rgba(0, 88, 120, 0.35);
+}
+
+
+.ecosystem__connection--1,
+.ecosystem__connection--2,
+.ecosystem__connection--3,
+.ecosystem__connection--4,
+.ecosystem__connection--5 {
+    width: 570px;
+    height: 570px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    border: 1px solid transparent;
+    animation: ecosystemOrbit 18s linear infinite;
+}
+
+.ecosystem__connection--2 {
+    animation-delay: -3.6s;
+}
+
+.ecosystem__connection--3 {
+    animation-delay: -7.2s;
+}
+
+.ecosystem__connection--4 {
+    animation-delay: -10.8s;
+}
+
+.ecosystem__connection--5 {
+    animation-delay: -14.4s;
+}
+
+@keyframes ecosystemOrbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+.ecosystem__service {
+    position: absolute;
+    z-index: 8;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 230px;
+    padding: 17px 19px;
+
+    border: 1px solid rgba(0, 88, 120, 0.1);
+    border-radius: 17px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    box-shadow:
+        0 15px 35px rgba(0, 56, 80, 0.09),
+        0 3px 10px rgba(0, 56, 80, 0.04);
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+
+.ecosystem__service--top-left {
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: cardOrbit 18s linear infinite;
+    transform-origin: center 282px;
+}
+
+.ecosystem__service--top-right {
+    top: 6%;
+    right: 50%;
+    transform: translateX(50%);
+    animation: cardOrbit 18s linear infinite;
+    animation-delay: -3.6s;
+    transform-origin: center 282px;
+}
+
+.ecosystem__service--bottom-right {
+    bottom: 6%;
+    right: 50%;
+    transform: translateX(50%);
+    animation: cardOrbit 18s linear infinite;
+    animation-delay: -7.2s;
+    transform-origin: center -282px;
+}
+
+.ecosystem__service--bottom-left {
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: cardOrbit 18s linear infinite;
+    animation-delay: -10.8s;
+    transform-origin: center -282px;
+}
+
+.ecosystem__service--right {
+    top: 50%;
+    right: 4%;
+    transform: translateY(-50%);
+    animation: cardOrbitSide 18s linear infinite;
+    animation-delay: -14.4s;
+    transform-origin: -240px center;
+}
+
+@keyframes cardOrbit {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes cardOrbitSide {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+
+.ecosystem__service-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+    background: #edf5f7;
+    color: var(--color-primary);
+}
+
+.ecosystem__service strong {
+    display: block;
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.ecosystem__service span {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+
+.ecosystem__service:hover {
+    border-color: rgba(0, 88, 120, 0.22);
+    box-shadow:
+        0 20px 45px rgba(0, 56, 80, 0.13),
+        0 0 0 4px rgba(0, 88, 120, 0.04);
+}
+
+.ecosystem__wallet {
+    position: absolute;
+    z-index: 10;
+
+    top: 50%;
+    left: 50%;
+
+    width: 340px;
+    min-height: 270px;
+
+    padding: 24px;
+    overflow: hidden;
+
+    transform: translate(-50%, -50%);
+
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 25px;
+
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 85% 10%,
+            rgba(74, 188, 218, 0.18),
+            transparent 30%),
+        linear-gradient(145deg,
+            #004b63 0%,
+            #003040 58%,
+            #002733 100%);
+
+    box-shadow:
+        0 30px 70px rgba(0, 48, 64, 0.28),
+        0 0 0 10px rgba(0, 88, 120, 0.025);
+}
+
+.ecosystem__wallet-glow {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    right: -90px;
+    top: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(74, 188, 218, 0.14);
+    filter: blur(4px);
+}
+
+.ecosystem__wallet-top {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ecosystem__wallet-icon {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.ecosystem__wallet-top>span {
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 13px;
+}
+
+.ecosystem__wallet-balance {
+    position: relative;
+    z-index: 1;
+    margin-top: 32px;
+}
+
+.ecosystem__wallet-balance small {
+    display: block;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 12px;
+}
+
+.ecosystem__wallet-balance strong {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.ecosystem__wallet-balance>span {
+    margin-inline-start: 6px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 10px;
+}
+
+.ecosystem__wallet-footer {
+    position: absolute;
+    right: 24px;
+    bottom: 22px;
+    left: 24px;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ecosystem__wallet-footer div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 12px;
+}
+
+.ecosystem__wallet-footer div:first-child svg {
+    color: #62c89c;
+}
+
+.ecosystem__wallet-footer div:last-child svg {
+    color: #e6a6a6;
+}
+
+.ecosystem__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+    color: var(--color-text-muted);
+    font-size: 12px;
+}
+
+.ecosystem__bottom-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-success);
+    box-shadow: 0 0 0 5px rgba(22, 128, 95, 0.08);
+}
+
+@keyframes ecosystemPulse {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: translateY(-50%) scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@media (max-width: 900px) {
+    .ecosystem__stage {
+        height: 650px;
+    }
+
+    .ecosystem__service--top-left {
+        left: 2%;
+    }
+
+    .ecosystem__service--top-right {
+        right: 2%;
+    }
+
+    .ecosystem__service--bottom-left {
+        left: 2%;
+    }
+
+    .ecosystem__service--bottom-right {
+        right: 2%;
+    }
+
+    .ecosystem__service--right {
+        right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .ecosystem__header {
+        margin-bottom: 10px;
+    }
+
+    .ecosystem__stage {
+        width: 100%;
+        height: 540px;
+        min-height: 0;
+        display: block;
+        position: relative;
+    }
+
+    .ecosystem__grid {
+        display: block;
+        opacity: 0.25;
+    }
+
+    .ecosystem__stage::before {
+        width: 390px;
+        height: 390px;
+    }
+
+    .ecosystem__stage::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .ecosystem__connection {
+        display: block;
+        width: 390px;
+        height: 390px;
+    }
+
+    .ecosystem__connection--1,
+    .ecosystem__connection--2,
+    .ecosystem__connection--3,
+    .ecosystem__connection--4,
+    .ecosystem__connection--5 {
+        width: 390px;
+        height: 390px;
+    }
+
+    .ecosystem__wallet {
+        position: absolute;
+        z-index: 10;
+
+        top: 50%;
+        left: 50%;
+
+        width: 245px;
+        min-height: 205px;
+
+        padding: 18px;
+
+        margin: 0;
+
+        transform: translate(-50%, -50%);
+    }
+
+    .ecosystem__wallet-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    .ecosystem__wallet-top>span {
+        font-size: 11px;
+    }
+
+    .ecosystem__wallet-balance {
+        margin-top: 22px;
+    }
+
+    .ecosystem__wallet-balance small {
+        font-size: 10px;
+    }
+
+    .ecosystem__wallet-balance strong {
+        font-size: 27px;
+    }
+
+    .ecosystem__wallet-footer {
+        right: 18px;
+        bottom: 17px;
+        left: 18px;
+        padding-top: 11px;
+    }
+
+    .ecosystem__wallet-footer div {
+        font-size: 10px;
+    }
+
+    .ecosystem__orbit-item {
+        display: block;
+        animation: ecosystemCards 18s linear infinite;
+    }
+
+    .ecosystem__orbit-item .ecosystem__service {
+        position: absolute;
+        top: -27px;
+        left: -82px;
+
+        width: 164px;
+
+        padding: 11px 12px;
+
+        gap: 9px;
+
+        border-radius: 13px;
+    }
+
+    .ecosystem__service-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 9px;
+    }
+
+    .ecosystem__service strong {
+        font-size: 11px;
+    }
+
+    .ecosystem__service span {
+        margin-top: 2px;
+        font-size: 9px;
+    }
+
+    .ecosystem__orbit-item--top-left {
+        animation-delay: 0s;
+    }
+
+    .ecosystem__orbit-item--top-right {
+        animation-delay: -3.6s;
+    }
+
+    .ecosystem__orbit-item--bottom-right {
+        animation-delay: -7.2s;
+    }
+
+    .ecosystem__orbit-item--bottom-left {
+        animation-delay: -10.8s;
+    }
+
+    .ecosystem__orbit-item--right {
+        animation-delay: -14.4s;
+    }
+
+    .ecosystem__stage>.ecosystem__service {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .ecosystem__title {
+        font-size: 32px;
+    }
+
+    .ecosystem__description {
+        font-size: 14px;
+    }
+
+    .ecosystem__stage {
+        height: 500px;
+    }
+
+    .ecosystem__stage::before {
+        width: 350px;
+        height: 350px;
+    }
+
+    .ecosystem__stage::after {
+        width: 270px;
+        height: 270px;
+    }
+
+    .ecosystem__connection,
+    .ecosystem__connection--1,
+    .ecosystem__connection--2,
+    .ecosystem__connection--3,
+    .ecosystem__connection--4,
+    .ecosystem__connection--5 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .ecosystem__wallet {
+        width: 225px;
+        min-height: 190px;
+        padding: 17px;
+    }
+
+    .ecosystem__wallet-balance strong {
+        font-size: 25px;
+    }
+
+    .ecosystem__orbit-item .ecosystem__service {
+        width: 150px;
+        left: -75px;
+    }
+
+    @keyframes ecosystemCards {
+        from {
+            transform: rotate(0deg) translateX(175px) rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg) translateX(175px) rotate(-360deg);
+        }
+    }
+}
+
+.ecosystem__orbit-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 8;
+
+    animation: ecosystemCards 18s linear infinite;
+}
+
+.ecosystem__orbit-item--top-left {
+    animation-delay: 0s;
+}
+
+.ecosystem__orbit-item--top-right {
+    animation-delay: -3.6s;
+}
+
+.ecosystem__orbit-item--bottom-right {
+    animation-delay: -7.2s;
+}
+
+.ecosystem__orbit-item--bottom-left {
+    animation-delay: -10.8s;
+}
+
+.ecosystem__orbit-item--right {
+    animation-delay: -14.4s;
+}
+
+.ecosystem__orbit-item .ecosystem__service {
+    position: absolute;
+    top: -32px;
+    left: -115px;
+    transform: none;
+}
+
+@keyframes ecosystemCards {
+    from {
+        transform: rotate(0deg) translateX(285px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(285px) rotate(-360deg);
+    }
+}
+@media (max-width: 700px) {
+    @keyframes ecosystemCards {
+        from {
+            transform: rotate(0deg) translateX(195px) rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg) translateX(195px) rotate(-360deg);
+        }
+    }
+}

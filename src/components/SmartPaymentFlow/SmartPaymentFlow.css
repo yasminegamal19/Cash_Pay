@@ -1,0 +1,522 @@
+.smart-flow {
+    position: relative;
+    overflow: hidden;
+    background: #fffafa;
+}
+
+.smart-flow__header {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.smart-flow__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 14px;
+    border: 1px solid rgba(0, 88, 120, 0.12);
+    border-radius: 999px;
+    background: #f7f9fa;
+    color: var(--color-primary);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.smart-flow__title {
+    margin: 20px 0 16px;
+    color: var(--color-text);
+    font-size: 45px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.smart-flow__title span {
+    color: var(--color-primary);
+}
+
+.smart-flow__description {
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.smart-flow__layout {
+    display: grid;
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 70px;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+.smart-flow__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.smart-flow__step {
+    position: relative;
+    display: grid;
+    grid-template-columns: 32px 46px 1fr;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+    padding: 17px;
+    border: 1px solid transparent;
+    border-radius: 17px;
+    background: transparent;
+    text-align: start;
+    transition: 0.3s ease;
+}
+
+.smart-flow__step:hover {
+    background: #f7f9fa;
+}
+
+.smart-flow__step.is-active {
+    border-color: rgba(0, 88, 120, 0.12);
+    background: #f7f9fa;
+    box-shadow: 0 12px 30px rgba(0, 56, 80, 0.06);
+}
+
+.smart-flow__step-number {
+    color: #9aabb2;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.smart-flow__step.is-active .smart-flow__step-number {
+    color: var(--color-primary);
+}
+
+.smart-flow__step-icon {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    background: #eaf3f6;
+    color: var(--color-primary);
+    transition: 0.3s ease;
+}
+
+.smart-flow__step.is-active .smart-flow__step-icon {
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
+.smart-flow__step-content strong {
+    display: block;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.smart-flow__step-content small {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-text-muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.smart-flow__demo {
+    position: relative;
+    min-height: 600px;
+    padding: 25px;
+    border: 1px solid #dce7eb;
+    border-radius: 30px;
+    background:
+        radial-gradient(circle at 80% 15%,
+            rgba(0, 112, 144, 0.08),
+            transparent 28%),
+        #f7f9fa;
+}
+
+.smart-flow__demo-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 18px;
+}
+
+.smart-flow__demo-top span {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 10px;
+}
+
+.smart-flow__demo-top strong {
+    display: block;
+    margin-top: 4px;
+    color: var(--color-text);
+    font-size: 14px;
+}
+
+.smart-flow__demo-status {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    border: 1px solid rgba(22, 128, 95, 0.12);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--color-success) !important;
+}
+
+.smart-flow__demo-status span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-success);
+}
+
+
+.smart-flow__phone {
+    position: relative;
+    width: min(280px, 100%);
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 30px 22px 22px;
+    border: 7px solid #002f40;
+    border-radius: 38px;
+    background: #ffffff;
+    box-shadow:
+        0 30px 70px rgba(0, 48, 64, 0.2),
+        0 0 0 1px rgba(0, 88, 120, 0.08);
+}
+
+.smart-flow__phone-notch {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 90px;
+    height: 18px;
+    border-radius: 20px;
+    background: #002f40;
+    transform: translateX(-50%);
+}
+
+.smart-flow__phone-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.smart-flow__phone-header small {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 9px;
+}
+
+.smart-flow__phone-header strong {
+    display: block;
+    margin-top: 3px;
+    color: var(--color-text);
+    font-size: 15px;
+}
+
+.smart-flow__phone-avatar {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #eaf3f6;
+    color: var(--color-primary);
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.smart-flow__progress {
+    display: flex;
+    gap: 5px;
+    margin: 24px 0;
+}
+
+.smart-flow__progress span {
+    flex: 1;
+    height: 3px;
+    border-radius: 99px;
+    background: #dce7eb;
+    transition: 0.3s ease;
+}
+
+.smart-flow__progress span.is-filled {
+    background: var(--color-primary);
+}
+
+
+.smart-flow__screen {
+    min-height: 270px;
+}
+
+.smart-flow__screen-content {
+    animation: smartFlowAppear 0.35s ease;
+}
+
+.smart-flow__screen-label {
+    display: block;
+    margin-bottom: 17px;
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.smart-flow__service-grid {
+    display: grid;
+    gap: 9px;
+}
+
+.smart-flow__service-card {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 14px;
+    border: 1px solid #e1eaed;
+    border-radius: 13px;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+}
+
+.smart-flow__service-card.is-selected {
+    border-color: rgba(0, 88, 120, 0.25);
+    background: #edf5f7;
+    color: var(--color-primary);
+}
+
+.smart-flow__input {
+    padding: 13px;
+    border: 1px solid #e1eaed;
+    border-radius: 13px;
+}
+
+.smart-flow__input small {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 9px;
+}
+
+.smart-flow__input strong {
+    display: block;
+    margin-top: 6px;
+    color: var(--color-text);
+    font-size: 13px;
+}
+
+.smart-flow__amount {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-top: 13px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f7f9fa;
+}
+
+.smart-flow__amount span {
+    color: var(--color-text);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.smart-flow__amount small {
+    color: var(--color-text-muted);
+    font-size: 10px;
+}
+
+.smart-flow__summary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #f7f9fa;
+}
+
+.smart-flow__summary div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.smart-flow__summary span {
+    color: var(--color-text-muted);
+    font-size: 10px;
+}
+
+.smart-flow__summary strong {
+    color: var(--color-text);
+    font-size: 11px;
+}
+
+.smart-flow__secure {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    color: var(--color-success);
+    font-size: 10px;
+}
+
+.smart-flow__success {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: smartFlowAppear 0.4s ease;
+}
+
+.smart-flow__success-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: #e8f6f1;
+    color: var(--color-success);
+}
+
+.smart-flow__success strong {
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.smart-flow__success span {
+    max-width: 220px;
+    margin-top: 8px;
+    color: var(--color-text-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.smart-flow__success b {
+    margin-top: 18px;
+    color: var(--color-primary);
+    font-size: 23px;
+}
+
+
+.smart-flow__phone-action {
+    margin-top: 10px;
+}
+
+.smart-flow__phone-action button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px;
+    border: 0;
+    border-radius: 13px;
+    background: var(--color-primary);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.25s ease;
+}
+
+.smart-flow__phone-action button:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+}
+
+
+.smart-flow__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.smart-flow__controls button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: 0;
+    background: transparent;
+    color: var(--color-text-secondary);
+    font-size: 11px;
+}
+
+.smart-flow__controls button:hover {
+    color: var(--color-primary);
+}
+
+.smart-flow__controls>span {
+    color: var(--color-text-muted);
+    font-size: 10px;
+    font-weight: 700;
+}
+
+@keyframes smartFlowAppear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 900px) {
+    .smart-flow__layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .smart-flow__steps {
+        max-width: 650px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .smart-flow__demo {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .smart-flow__header {
+        margin-bottom: 45px;
+    }
+
+    .smart-flow__demo {
+        padding: 16px;
+        border-radius: 23px;
+    }
+
+    .smart-flow__phone {
+        min-height: 490px;
+        padding-inline: 17px;
+    }
+
+    .smart-flow__step {
+        grid-template-columns: 25px 42px 1fr;
+        padding: 13px;
+    }
+
+    .smart-flow__step-icon {
+        width: 42px;
+        height: 42px;
+    }
+}

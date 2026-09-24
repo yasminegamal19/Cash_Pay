@@ -1,0 +1,567 @@
+.transaction-intelligence {
+    position: relative;
+    overflow: hidden;
+    background: #f7f9fa;
+}
+
+
+.transaction-intelligence__header {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.transaction-intelligence__eyebrow {
+    display: inline-flex;
+    padding: 7px 14px;
+
+    border: 1px solid rgba(0, 88, 120, 0.12);
+    border-radius: 999px;
+
+    background: #fff;
+    color: var(--color-primary);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.transaction-intelligence__title {
+    margin: 18px 0 14px;
+
+    color: var(--color-text);
+
+    font-size: 45px;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.transaction-intelligence__title span {
+    color: var(--color-primary);
+}
+
+.transaction-intelligence__description {
+    max-width: 600px;
+    margin: auto;
+
+    color: var(--color-text-secondary);
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.transaction-intelligence__dashboard {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr);
+    gap: 18px;
+
+    width: min(1120px, 100%);
+    margin: auto;
+}
+
+.transaction-intelligence__balance {
+    position: relative;
+
+    min-height: 210px;
+    padding: 23px;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    color: #fff;
+
+    background:
+        radial-gradient(circle at 90% 10%,
+            rgba(86, 198, 222, 0.18),
+            transparent 30%),
+        linear-gradient(145deg,
+            #004b63,
+            #003040);
+
+    box-shadow: 0 20px 45px rgba(0, 48, 64, 0.18);
+}
+
+.transaction-intelligence__balance::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -80px;
+    bottom: -80px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.transaction-intelligence__balance-top {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 11px;
+}
+
+.transaction-intelligence__wallet-icon {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.transaction-intelligence__balance>strong {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    font-size: 29px;
+    letter-spacing: -1px;
+}
+
+.transaction-intelligence__balance>small {
+    margin-inline-start: 5px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    font-size: 10px;
+}
+
+.transaction-intelligence__growth {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 18px;
+
+    color: #70d3a7;
+
+    font-size: 11px;
+}
+
+.transaction-intelligence__growth small {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.transaction-intelligence__pulse-card {
+    position: relative;
+
+    min-height: 390px;
+    padding: 25px;
+
+    border: 1px solid rgba(0, 88, 120, 0.09);
+    border-radius: 22px;
+
+    background: #fff;
+
+    box-shadow: 0 18px 45px rgba(0, 56, 80, 0.06);
+}
+
+.transaction-intelligence__pulse-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction-intelligence__pulse-header span {
+    display: block;
+
+    color: var(--color-text-muted);
+
+    font-size: 10px;
+}
+
+.transaction-intelligence__pulse-header strong {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--color-text);
+
+    font-size: 15px;
+}
+
+.transaction-intelligence__live {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+
+    color: var(--color-success) !important;
+
+    font-size: 10px !important;
+}
+
+.transaction-intelligence__live span {
+    width: 6px;
+    height: 6px;
+
+    margin: 0 !important;
+
+    border-radius: 50%;
+
+    background: var(--color-success);
+
+    box-shadow: 0 0 0 5px rgba(22, 128, 95, 0.08);
+}
+
+.transaction-intelligence__chart {
+    position: relative;
+
+    height: 245px;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+}
+
+.transaction-intelligence__grid {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction-intelligence__grid span {
+    width: 1px;
+    height: 100%;
+
+    background: rgba(0, 88, 120, 0.045);
+}
+
+.transaction-intelligence__grid::before,
+.transaction-intelligence__grid::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background: rgba(0, 88, 120, 0.045);
+}
+
+.transaction-intelligence__grid::before {
+    top: 35%;
+}
+
+.transaction-intelligence__grid::after {
+    top: 70%;
+}
+
+.transaction-intelligence__line {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: visible;
+}
+
+.transaction-intelligence__pulse-shadow {
+    fill: none;
+
+    stroke: rgba(0, 88, 120, 0.07);
+    stroke-width: 12;
+
+    filter: blur(5px);
+}
+
+.transaction-intelligence__pulse-line {
+    fill: none;
+
+    stroke: url(#pulseGradient);
+    stroke-width: 3;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 1800;
+    stroke-dashoffset: 1800;
+
+    animation: drawPulse 4.5s ease-in-out infinite;
+}
+
+@keyframes drawPulse {
+    0% {
+        stroke-dashoffset: 1800;
+    }
+
+    55%,
+    70% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -300;
+    }
+}
+
+.transaction-intelligence__transaction {
+    position: absolute;
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 7px 9px;
+
+    border: 1px solid rgba(0, 88, 120, 0.08);
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    box-shadow: 0 8px 20px rgba(0, 56, 80, 0.08);
+
+    transform: translate(-50%, -50%);
+
+    animation: markerFloat 3s ease-in-out infinite;
+}
+
+.transaction-intelligence__transaction:nth-of-type(2) {
+    animation-delay: 0.7s;
+}
+
+.transaction-intelligence__transaction:nth-of-type(3) {
+    animation-delay: 1.3s;
+}
+
+.transaction-intelligence__transaction:nth-of-type(4) {
+    animation-delay: 1.9s;
+}
+
+@keyframes markerFloat {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%);
+    }
+
+    50% {
+        transform: translate(-50%, calc(-50% - 4px));
+    }
+}
+
+.transaction-intelligence__transaction-dot {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+}
+
+.transaction-intelligence__transaction--income .transaction-intelligence__transaction-dot {
+    background: rgba(22, 128, 95, 0.1);
+    color: var(--color-success);
+}
+
+.transaction-intelligence__transaction--expense .transaction-intelligence__transaction-dot {
+    background: rgba(217, 83, 83, 0.08);
+    color: var(--color-error);
+}
+
+.transaction-intelligence__transaction strong {
+    display: block;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.transaction-intelligence__transaction span {
+    display: block;
+
+    margin-top: 1px;
+
+    color: var(--color-text-muted);
+
+    font-size: 8px;
+}
+
+.transaction-intelligence__scanner {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 1px;
+
+    background: linear-gradient(to bottom,
+            transparent,
+            rgba(0, 88, 120, 0.4),
+            transparent);
+
+    box-shadow: 0 0 15px rgba(0, 88, 120, 0.15);
+
+    animation: scannerMove 4.5s linear infinite;
+}
+
+@keyframes scannerMove {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.transaction-intelligence__legend {
+    display: flex;
+    gap: 18px;
+
+    margin-top: 5px;
+
+    color: var(--color-text-muted);
+
+    font-size: 9px;
+}
+
+.transaction-intelligence__legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.transaction-intelligence__legend i {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+}
+
+.transaction-intelligence__legend .is-income {
+    background: var(--color-success);
+}
+
+.transaction-intelligence__legend .is-expense {
+    background: var(--color-error);
+}
+
+.transaction-intelligence__stats {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+
+    margin-top: 2px;
+}
+
+.transaction-intelligence__stat {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 16px 18px;
+
+    border: 1px solid rgba(0, 88, 120, 0.08);
+    border-radius: 15px;
+
+    background: #fff;
+}
+
+.transaction-intelligence__stat-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #edf5f7;
+    color: var(--color-primary);
+}
+
+.transaction-intelligence__stat-icon.income {
+    background: rgba(22, 128, 95, 0.09);
+    color: var(--color-success);
+}
+
+.transaction-intelligence__stat-icon.expense {
+    background: rgba(217, 83, 83, 0.08);
+    color: var(--color-error);
+}
+
+.transaction-intelligence__stat span {
+    display: block;
+
+    color: var(--color-text-muted);
+    font-size: 13px;
+}
+
+.transaction-intelligence__stat strong {
+    display: block;
+
+    margin-top: 7px;
+
+    color: var(--color-text);
+
+    font-size: 16px;
+}
+
+@media (max-width: 850px) {
+    .transaction-intelligence__dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .transaction-intelligence__balance {
+        min-height: 180px;
+    }
+
+    .transaction-intelligence__stats {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .transaction-intelligence__header {
+        margin-bottom: 40px;
+    }
+
+    .transaction-intelligence__description {
+        font-size: 14px;
+    }
+
+    .transaction-intelligence__pulse-card {
+        padding: 18px;
+    }
+
+    .transaction-intelligence__chart {
+        height: 210px;
+    }
+
+    .transaction-intelligence__stats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .transaction-intelligence__pulse-line,
+    .transaction-intelligence__scanner,
+    .transaction-intelligence__transaction {
+        animation: none;
+    }
+}

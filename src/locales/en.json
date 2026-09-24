@@ -1,0 +1,877 @@
+{
+  "common": {
+    "appName": "Cash Pay",
+    "currency": "EGP",
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "download": "Download App"
+  },
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "wallet": "Wallet",
+    "transactions": "Transactions",
+    "features": "Features",
+    "howItWorks": "How it works",
+    "security": "Security",
+    "help": "Help",
+    "downloadApp": "Download app",
+    "language": "AR",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "primaryButton": "start Now",
+    "eyebrow": "Smart payments, better life",
+    "title": "Your everyday payments",
+    "highlight": "made simple",
+    "description": "Recharge, pay bills, and manage your money from one secure and easy-to-use app. Cash Pay gives you full control, anytime, anywhere.",
+
+    "downloadSmall": "Download the app",
+    "downloadApp": "Get started with Cash Pay",
+    "explore": "Explore services",
+
+    "trust": {
+      "fast": {
+        "title": "Fast",
+        "text": "Instant transactions"
+      },
+      "secure": {
+        "title": "Secure",
+        "text": "Your data is protected"
+      },
+      "available": {
+        "title": "24/7",
+        "text": "Always available"
+      }
+    },
+
+    "floating": {
+      "success": {
+        "title": "Payment successful!",
+        "text": "Electricity bill"
+      },
+      "electricity": {
+        "label": "Electricity bill"
+      },
+      "recharge": {
+        "label": "Mobile recharge"
+      }
+    },
+
+    "receipt": {
+      "label": "Payment receipt",
+      "view": "View receipt"
+    },
+
+    "phone": {
+      "balance": "Available balance",
+      "month": "this month",
+      "recent": "Recent transactions",
+      "viewAll": "View all",
+
+      "services": {
+        "recharge": "Recharge",
+        "electricity": "Electricity",
+        "water": "Water",
+        "gas": "Gas",
+        "internet": "Internet"
+      },
+
+      "transactions": {
+        "electricity": "Electricity bill",
+        "recharge": "Mobile recharge",
+        "internet": "Internet",
+        "water": "Water bill"
+      },
+
+      "nav": {
+        "home": "Home",
+        "transactions": "Transactions",
+        "wallet": "Wallet",
+        "profile": "Profile"
+      }
+    }
+  },
+
+  "features": {
+    "eyebrow": "Why Cash Pay?",
+    "title": "Everything you need",
+    "highlight": "in one place",
+    "description": "Cash Pay is designed to make your payment experience simpler, clearer and faster, from the first transaction to the last.",
+    "items": {
+      "wallet": {
+        "title": "Your wallet in your hands",
+        "description": "Track your wallet balance and financial activity easily from one place."
+      },
+      "transactions": {
+        "title": "Clear transaction history",
+        "description": "Review your transactions and easily check payment and transfer details."
+      },
+      "favorites": {
+        "title": "Your favorite services, faster",
+        "description": "Save your favorite numbers and accounts for quicker access to frequently used services."
+      },
+      "notifications": {
+        "title": "Stay updated",
+        "description": "Keep track of your transactions and important updates through notifications."
+      }
+    },
+    "wallet": {
+      "balance": "Available balance",
+      "name": "Cash Pay Wallet",
+      "lastDigits": "•••• 2847"
+    },
+    "transactions": {
+      "title": "Recent transactions",
+      "recharge": "Mobile recharge",
+      "electricity": "Electricity bill",
+      "walletTransfer": "Wallet transfer",
+      "today": "Today, 11:42 AM",
+      "yesterdayEvening": "Yesterday, 08:20 PM",
+      "yesterdayAfternoon": "Yesterday, 02:15 PM",
+      "successful": "Successful transaction",
+      "completed": "Transaction completed successfully"
+    }
+  },
+  "howItWorks": {
+    "eyebrow": "Simple from start to finish",
+    "title": "Pay in",
+    "highlight": "just 3 steps",
+    "description": "Cash Pay is designed to help you reach the service you need and complete your transaction with ease.",
+    "steps": {
+      "choose": {
+        "title": "Choose a service",
+        "description": "Choose the service you need from the available Cash Pay services."
+      },
+      "data": {
+        "title": "Enter your details",
+        "description": "Enter the required service details and review them before completing the transaction."
+      },
+      "confirm": {
+        "title": "Confirm the transaction",
+        "description": "Review the transaction details, confirm the payment, and receive your transaction confirmation."
+      }
+    },
+    "bottom": {
+      "easy": {
+        "title": "Simple and clear experience",
+        "description": "Every step is clear and easy to follow."
+      },
+      "confirmation": {
+        "title": "Transaction confirmation",
+        "description": "Know the status of your transaction after completion."
+      },
+      "allServices": {
+        "title": "All your services in one place",
+        "description": "No need to switch between different apps."
+      }
+    }
+  },
+  "security": {
+    "eyebrow": "Security First",
+    "title": "Your Data & Transactions",
+    "highlight": "Stay Secure",
+    "description": "Cash Pay is designed with the security of your data and transactions in mind, providing a reliable and transparent payment experience.",
+    "items": {
+      "data": {
+        "title": "Data Protection",
+        "description": "Protecting account and transaction data while using the platform."
+      },
+      "transactions": {
+        "title": "Trusted Transactions",
+        "description": "Track transaction status and receive confirmation after completion."
+      },
+      "privacy": {
+        "title": "Better Privacy",
+        "description": "Access to account and transaction data remains connected to the account and its permissions."
+      }
+    },
+    "status": {
+      "title": "System Secure",
+      "subtitle": "Transaction protection is active"
+    }
+  },
+  "downloadApp": {
+    "eyebrow": "Cash Pay App",
+    "title": "Cash Pay with you",
+    "highlight": "every step",
+    "description": "Download Cash Pay and enjoy a simple, fast payment experience while managing your services and transactions from one place.",
+    "points": {
+      "mobile": {
+        "title": "Available on mobile",
+        "description": "Access Cash Pay services wherever you are."
+      },
+      "security": {
+        "title": "Security & privacy",
+        "description": "Your account and transaction data are protected."
+      },
+      "speed": {
+        "title": "Fast transactions",
+        "description": "Access services and complete transactions with clear steps."
+      }
+    },
+    "store": {
+      "downloadOn": "Available on",
+      "googlePlay": "Google Play",
+      "appStore": "App Store"
+    },
+    "mockup": {
+      "balance": "Available balance",
+      "recharge": "Recharge",
+      "bills": "Bills",
+      "wallet": "Wallet",
+      "transactions": "Recent transactions"
+    },
+    "secureCard": {
+      "title": "Secure connection",
+      "description": "Your data is protected"
+    }
+  },
+  "footer": {
+    "description": "Digital payment solutions designed to manage everyday services and transactions from one place.",
+    "navigation": {
+      "title": "Navigation",
+      "faq": "FAQ"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "location": "Egypt"
+    },
+    "rights": "All rights reserved.",
+    "madeFor": "Simpler payments. Easier life."
+  },
+  "servicesPage": {
+    "eyebrow": "Cash Pay Services",
+    "title": "All payment services",
+    "highlight": "in one place",
+    "description": "Access a complete range of everyday payment services, from mobile recharge and bill payments to digital wallet management.",
+    "available": "Available in Cash Pay",
+    "items": {
+      "recharge": {
+        "label": "Recharge",
+        "title": "Mobile Recharge",
+        "description": "Recharge your mobile easily and quickly while keeping track of your transaction details."
+      },
+      "electricity": {
+        "label": "Bills",
+        "title": "Electricity Bills",
+        "description": "Pay your electricity bills with a simple experience and keep track of your transaction."
+      },
+      "water": {
+        "label": "Bills",
+        "title": "Water Bills",
+        "description": "Manage and pay your water bills through a clear and simple payment experience."
+      },
+      "gas": {
+        "label": "Bills",
+        "title": "Gas Bills",
+        "description": "Pay your gas bills and track the transaction status from your account."
+      },
+      "internet": {
+        "label": "Bills",
+        "title": "Internet Bills",
+        "description": "Pay your internet bill and manage your transactions from one place."
+      },
+      "wallet": {
+        "label": "Wallet",
+        "title": "Digital Wallet",
+        "description": "Track your wallet balance and financial activity while managing your money more easily."
+      }
+    },
+    "cta": {
+      "label": "Digital Wallet",
+      "title": "Managing your money made simpler",
+      "description": "Track your balance and transactions with a clearer and easier financial experience.",
+      "button": "Explore the wallet"
+    }
+  },
+  "walletPage": {
+    "eyebrow": "Digital Wallet",
+    "title": "Your money",
+    "highlight": "under your control",
+    "description": "Track your balance and transactions while managing your financial services through one clear and simple experience.",
+    "balanceLabel": "Available balance",
+    "walletName": "Cash Pay Wallet",
+    "lastDigits": "•••• 2847",
+    "active": "Active",
+    "quickActions": "Quick actions",
+    "actions": {
+      "topUp": "Top up wallet",
+      "transfer": "Transfer money",
+      "pay": "Pay a service"
+    },
+    "stats": {
+      "incoming": "Total incoming",
+      "outgoing": "Total outgoing",
+      "transactions": "Transactions"
+    },
+    "transactionsEyebrow": "Wallet activity",
+    "transactionsTitle": "Recent transactions",
+    "transactionTypes": {
+      "recharge": "Mobile recharge",
+      "electricity": "Electricity bill",
+      "transfer": "Wallet transfer"
+    },
+    "transactionDates": {
+      "today": "Today, 11:42 AM",
+      "yesterday": "Yesterday, 08:20 PM"
+    },
+    "security": {
+      "title": "Your wallet is protected",
+      "description": "Your data and transactions are protected through security layers designed for a safer payment experience."
+    }
+  },
+  "transactionsPage": {
+    "eyebrow": "Transaction history",
+    "title": "All your transactions",
+    "highlight": "in one place",
+    "description": "Review your transactions and track payment and transfer details through a clear and organized history.",
+    "summary": {
+      "balance": "Current balance",
+      "balanceDescription": "Available wallet balance",
+      "income": "Incoming",
+      "expenses": "Outgoing",
+      "count": "Transactions",
+      "thisMonth": "This month"
+    },
+    "listEyebrow": "Activity history",
+    "listTitle": "Recent transactions",
+    "backToWallet": "Back to wallet",
+    "filters": {
+      "all": "All",
+      "recharge": "Recharge",
+      "electricity": "Electricity",
+      "internet": "Internet",
+      "transfer": "Transfer",
+      "date": "All dates"
+    },
+    "types": {
+      "recharge": {
+        "title": "Mobile recharge"
+      },
+      "electricity": {
+        "title": "Electricity bill"
+      },
+      "internet": {
+        "title": "Internet bill"
+      },
+      "transfer": {
+        "title": "Wallet transfer"
+      },
+      "water": {
+        "title": "Water bill"
+      }
+    },
+    "dates": {
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "older": "Earlier"
+    },
+    "status": {
+      "successful": "Successful",
+      "pending": "Pending"
+    },
+    "more": "More",
+    "empty": {
+      "title": "No transactions",
+      "description": "There are no transactions matching the current filter."
+    },
+    "info": {
+      "title": "Your transactions are clearly recorded",
+      "description": "Review transaction details and track their status through your transaction history."
+    }
+  },
+  "helpPage": {
+    "eyebrow": "Help Center",
+    "title": "We're here",
+    "highlight": "to help",
+    "description": "Search for an answer or browse the frequently asked questions to learn more about Cash Pay services.",
+    "searchPlaceholder": "Search your question...",
+    "searchHint": "Example: How do I top up my wallet?",
+    "clearSearch": "Clear search",
+    "categories": {
+      "all": "All questions",
+      "account": "Account",
+      "wallet": "Wallet",
+      "payments": "Payments",
+      "security": "Security"
+    },
+    "faqEyebrow": "Frequently asked questions",
+    "faqTitle": "Popular questions",
+    "results": "results",
+    "faqs": {
+      "wallet": {
+        "question": "How can I check my wallet balance?",
+        "answer": "You can check your wallet balance from the wallet page inside Cash Pay, where your available balance and financial activity are displayed."
+      },
+      "recharge": {
+        "question": "How can I recharge a mobile number?",
+        "answer": "Choose the mobile recharge service, enter the phone number and amount, then review the transaction details before confirming the payment."
+      },
+      "bills": {
+        "question": "Which bills can I pay?",
+        "answer": "Cash Pay services include electricity, water, gas and internet bill payments, along with other payment services available on the platform."
+      },
+      "transaction": {
+        "question": "Where can I track my transactions?",
+        "answer": "You can review your transactions through the transaction history, including the transaction type, amount and status."
+      },
+      "security": {
+        "question": "Are my data and transactions protected?",
+        "answer": "Cash Pay is designed with security layers to help protect user data and transactions and provide a safer payment experience."
+      },
+      "account": {
+        "question": "How can I manage my account?",
+        "answer": "You can manage your account details and related services through your Cash Pay account."
+      }
+    },
+    "empty": {
+      "title": "No results found",
+      "description": "Try different keywords or browse all available questions.",
+      "button": "Show all questions"
+    },
+    "contact": {
+      "eyebrow": "Can't find what you need?",
+      "title": "Need more help?",
+      "description": "Contact our support team to get the help and information you need.",
+      "button": "Contact us",
+      "available": "Support team available"
+    }
+  },
+  "ecosystem": {
+    "eyebrow": "The Cash Pay ecosystem",
+    "title": "Your payment services",
+    "highlight": "connected in one place",
+    "description": "From mobile recharge and bill payments to wallet management, Cash Pay brings everyday payment services into one clear experience.",
+    "services": {
+      "recharge": {
+        "title": "Mobile Recharge",
+        "label": "Payment service"
+      },
+      "electricity": {
+        "title": "Electricity",
+        "label": "Bill payment"
+      },
+      "water": {
+        "title": "Water",
+        "label": "Bill payment"
+      },
+      "gas": {
+        "title": "Gas",
+        "label": "Bill payment"
+      },
+      "internet": {
+        "title": "Internet",
+        "label": "Bill payment"
+      }
+    },
+    "wallet": {
+      "label": "Digital Wallet",
+      "balance": "Available balance",
+      "incoming": "Incoming",
+      "outgoing": "Outgoing"
+    },
+    "bottom": "One platform for your everyday payment services"
+  },
+  "smartFlow": {
+    "eyebrow": "PAYMENT EXPERIENCE",
+    "title": "Payments made",
+    "highlight": "clearer and easier",
+    "description": "Explore a complete payment journey, from choosing a service to confirming the transaction, through a simple and focused interface.",
+    "steps": {
+      "service": {
+        "title": "Choose service",
+        "description": "Select the service you need",
+        "screenTitle": "Choose a service"
+      },
+      "details": {
+        "title": "Enter details",
+        "description": "Add the transaction details",
+        "screenTitle": "Transaction details"
+      },
+      "review": {
+        "title": "Review transaction",
+        "description": "Review everything before confirming",
+        "screenTitle": "Review transaction"
+      },
+      "success": {
+        "title": "Transaction complete",
+        "description": "Instant confirmation of the payment",
+        "screenTitle": "Transaction complete"
+      }
+    },
+    "demo": {
+      "label": "INTERACTIVE PREVIEW",
+      "live": "LIVE",
+      "cashPay": "Cash Pay",
+      "chooseService": "Choose a service",
+      "enterDetails": "Enter transaction details",
+      "number": "Phone number",
+      "review": "Review transaction",
+      "service": "Service",
+      "total": "Total",
+      "secure": "Secure transaction",
+      "completed": "Transaction completed",
+      "completedDescription": "The transaction has been successfully processed and confirmed.",
+      "continue": "Continue",
+      "restart": "Start again"
+    },
+    "services": {
+      "recharge": "Mobile recharge",
+      "electricity": "Electricity",
+      "internet": "Internet"
+    },
+    "controls": {
+      "previous": "Previous",
+      "next": "Next"
+    }
+  },
+  "transactionIntelligence": {
+    "eyebrow": "FINANCIAL CLARITY",
+    "title": "Your transactions in",
+    "highlight": "one clear view",
+    "description": "Keep track of your balance, money movement, and daily transactions through one clear and connected view.",
+    "balance": {
+      "label": "Current balance",
+      "status": "Balance available",
+      "updated": "Updated now"
+    },
+    "stats": {
+      "incoming": "Incoming",
+      "outgoing": "Outgoing",
+      "transactions": "Transactions"
+    },
+    "chart": {
+      "label": "FINANCIAL ACTIVITY",
+      "title": "Transaction movement",
+      "period": "Last 6 months",
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "incoming": "Incoming",
+      "outgoing": "Outgoing"
+    },
+    "recent": {
+      "label": "ACTIVITY",
+      "title": "Recent transactions",
+      "viewAll": "View all",
+      "secure": "All transactions are recorded and secured"
+    },
+    "transactions": {
+      "recharge": "Mobile recharge",
+      "electricity": "Electricity bill",
+      "transfer": "Money transfer",
+      "internet": "Internet bill",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "sunday": "Sunday"
+    },
+    "footer": "Track your money with clarity and ease"
+  },
+  "notificationTimeline": {
+    "eyebrow": "REAL-TIME UPDATES",
+    "title": "Everything happening in your wallet",
+    "highlight": "right when it happens",
+    "description": "Follow transaction updates, wallet activity, and security notifications in real time without searching for information.",
+    "activity": {
+      "label": "WALLET ACTIVITY",
+      "title": "Latest updates",
+      "live": "LIVE"
+    },
+    "notifications": {
+      "payment": {
+        "title": "Payment completed",
+        "description": "Mobile recharge completed successfully",
+        "time": "2 minutes ago"
+      },
+      "received": {
+        "title": "Money received",
+        "description": "Funds have been added to your wallet",
+        "time": "5 minutes ago"
+      },
+      "security": {
+        "title": "Transaction secured",
+        "description": "Transaction has been securely recorded",
+        "time": "7 minutes ago"
+      },
+      "bill": {
+        "title": "Bill paid",
+        "description": "Electricity bill paid successfully",
+        "time": "12 minutes ago"
+      }
+    },
+    "preview": {
+      "label": "NOTIFICATIONS",
+      "title": "Wallet updates",
+      "notificationTitle": "Transaction completed",
+      "notificationDescription": "Your recharge was completed and your wallet balance was updated.",
+      "notificationTime": "Just now",
+      "securityTitle": "Security alert",
+      "securityDescription": "The transaction was confirmed and secured."
+    },
+    "stats": {
+      "notifications": "Notifications",
+      "visibility": "Visibility",
+      "availability": "Available"
+    },
+    "note": {
+      "title": "Every update in its place",
+      "description": "Notifications help you follow every movement and understand your transaction status easily."
+    },
+    "footer": "Your financial activity, right when you need it"
+  },
+  "transactionIntelligence": {
+    "eyebrow": "Transaction intelligence",
+    "title": "See your money",
+    "highlight": "in motion",
+    "description": "A clear view of your money movement and transactions, from incoming funds to everyday payments.",
+    "balance": {
+      "label": "Current balance",
+      "period": "This month"
+    },
+    "pulse": {
+      "label": "Wallet activity",
+      "title": "Your transaction pulse",
+      "live": "Live"
+    },
+    "transactions": {
+      "recharge": "Recharge",
+      "electricity": "Electricity",
+      "internet": "Internet",
+      "wallet": "Wallet top-up"
+    },
+    "legend": {
+      "income": "Money in",
+      "expense": "Money out"
+    },
+    "stats": {
+      "incoming": "Total incoming",
+      "outgoing": "Total outgoing",
+      "transactions": "Transactions"
+    }
+  },
+  "services": {
+    "eyebrow": "Payment services",
+    "title": "Pay for everything",
+    "highlight": "in one place",
+    "description": "From mobile recharge to everyday bills, Cash Pay makes your payments simpler, faster and more secure.",
+
+    "items": {
+      "recharge": {
+        "title": "Mobile recharge",
+        "label": "Mobile & bundles"
+      },
+      "electricity": {
+        "title": "Electricity",
+        "label": "Electricity bill payment"
+      },
+      "water": {
+        "title": "Water",
+        "label": "Water bill payment"
+      },
+      "gas": {
+        "title": "Gas",
+        "label": "Gas bill payment"
+      },
+      "internet": {
+        "title": "Internet",
+        "label": "Internet renewal & payment"
+      }
+    },
+
+    "benefits": {
+      "fast": {
+        "title": "Quick & easy",
+        "description": "Complete your payments in just a few steps."
+      },
+      "secure": {
+        "title": "Safe & secure",
+        "description": "Your data and money are always protected."
+      },
+      "available": {
+        "title": "Available anytime",
+        "description": "Pay anytime, anywhere."
+      }
+    },
+
+    "payment": {
+      "back": "Services",
+      "title": "Pay your bill",
+      "account": "Account number",
+      "amount": "Amount",
+      "fee": "Service fee",
+      "total": "Total amount",
+      "pay": "Pay now"
+    },
+
+    "receipt": {
+      "label": "Payment receipt",
+      "success": "Payment successful!",
+      "description": "Your bill has been paid successfully.",
+      "service": "Service",
+      "account": "Account number",
+      "amount": "Amount",
+      "view": "View receipt"
+    }
+  },
+  "privacyPolicy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "description": "Learn how Cash Pay handles and protects your data while you use our platform services."
+    },
+    "meta": {
+      "documentType": {
+        "label": "Document type",
+        "value": "Privacy Policy"
+      },
+      "lastUpdated": {
+        "label": "Last updated",
+        "value": "2026"
+      },
+      "status": {
+        "label": "Status",
+        "value": "Active"
+      }
+    },
+    "contentsTitle": "Policy contents",
+    "document": {
+      "title": "Privacy & Data Protection Policy",
+      "description": "This policy outlines the general principles governing the handling of data and information associated with the use of Cash Pay services."
+    },
+    "sections": {
+      "privacy-intro": {
+        "title": "Introduction",
+        "content": [
+          "At Cash Pay, we are committed to protecting users' privacy and maintaining the security of their personal data.",
+          "This Privacy Policy explains how information is collected, used, and protected when using Cash Pay services."
+        ]
+      },
+      "privacy-data": {
+        "title": "Information We Collect",
+        "content": [
+          "Information necessary to provide services, operate accounts, and properly complete transactions may be collected.",
+          "This information may include account details, contact information, and information related to transactions and services used."
+        ]
+      },
+      "privacy-use": {
+        "title": "Use of Information",
+        "content": [
+          "Information is used to provide Cash Pay services, improve the user experience, manage transactions, and communicate about services.",
+          "Information may also be used for security purposes, preventing unauthorized use, and complying with applicable legal requirements."
+        ]
+      },
+      "privacy-security": {
+        "title": "Data Protection",
+        "content": [
+          "We take appropriate measures to help protect information from unauthorized access, use, or modification.",
+          "However, no electronic method can be guaranteed to be completely secure."
+        ]
+      },
+      "privacy-sharing": {
+        "title": "Information Sharing",
+        "content": [
+          "Personal information is only shared when necessary to provide services, operate the platform, or when required or permitted under applicable laws and regulations."
+        ]
+      },
+      "privacy-rights": {
+        "title": "User Rights",
+        "content": [
+          "Users may contact us to inquire about their data or request clarification regarding how their information is used, in accordance with applicable regulations and policies."
+        ]
+      },
+      "privacy-contact": {
+        "title": "Contact Us",
+        "content": [
+          "For any inquiries regarding this Privacy Policy or data protection, users can contact the Cash Pay team through the contact information available on the website."
+        ]
+      }
+    }
+  },
+  "terms": {
+    "hero": {
+      "title": "Terms & Conditions",
+      "description": "Learn about the rules and conditions governing the use of Cash Pay services."
+    },
+    "meta": {
+      "documentType": {
+        "label": "Document type",
+        "value": "Terms & Conditions"
+      },
+      "lastUpdated": {
+        "label": "Last updated",
+        "value": "2026"
+      },
+      "status": {
+        "label": "Status",
+        "value": "Active"
+      }
+    },
+    "contentsTitle": "Terms contents",
+    "document": {
+      "title": "Terms & Conditions for Using Cash Pay",
+      "description": "These terms outline the rules governing the use of the platform, services, and transactions available through Cash Pay."
+    },
+    "sections": {
+      "terms-intro": {
+        "title": "Introduction",
+        "content": [
+          "By using Cash Pay services, the user acknowledges that they have read and understood the terms and conditions governing the use of the platform.",
+          "These terms govern the relationship between the user and Cash Pay regarding the use of the available services."
+        ]
+      },
+      "terms-account": {
+        "title": "Account & Use",
+        "content": [
+          "The user is required to provide accurate and correct information when creating an account and using the services.",
+          "The user is responsible for maintaining the confidentiality of their login credentials and not sharing them with others."
+        ]
+      },
+      "terms-services": {
+        "title": "Services",
+        "content": [
+          "Cash Pay provides a range of digital services that help users manage their daily payments and transactions.",
+          "Available services may vary based on updates, service providers, or operational requirements."
+        ]
+      },
+      "terms-transactions": {
+        "title": "Transactions & Payments",
+        "content": [
+          "The user is responsible for reviewing transaction details before confirming them.",
+          "After a transaction is confirmed, cancellation or refund processes may be subject to the terms and procedures applicable to the service used."
+        ]
+      },
+      "terms-prohibited": {
+        "title": "Prohibited Use",
+        "content": [
+          "The use of Cash Pay services in violation of applicable laws, for fraudulent purposes, to misuse the platform, or to harm other users is prohibited."
+        ]
+      },
+      "terms-availability": {
+        "title": "Service Availability",
+        "content": [
+          "We aim to maintain continuous availability of our services; however, some services may be affected by maintenance, technical failures, or circumstances beyond our control."
+        ]
+      },
+      "terms-changes": {
+        "title": "Changes to the Terms",
+        "content": [
+          "These terms may be updated from time to time to reflect the development of services or changes in legal and regulatory requirements."
+        ]
+      },
+      "terms-contact": {
+        "title": "Contact",
+        "content": [
+          "For any inquiries regarding these terms or the use of Cash Pay services, users can contact the support team through the contact information available on the website."
+        ]
+      }
+    }
+  }
+}
